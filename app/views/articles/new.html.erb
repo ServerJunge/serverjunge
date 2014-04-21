@@ -1,4 +1,16 @@
-<%= simple_form_for(@article)  do |f| %>
-	<%= f.input :title, label: 'Titel' %>
-	<%= f.input :text, label: 'Text' %>
-<% end %>
+<div class="well">
+ 	<legend>Neuer Artikel</legend>
+
+			<%= simple_form_for(@article)  do |f| %>
+			<%= f.input :title, label: 'Titel' %>
+			<%= f.input :text, label: 'Text' %>
+		
+	<div class="form-group">
+      	<div class="col-lg-10 col-lg-offset-2">
+  			<%= f.button :submit, 'Erstellen', class: 'btn btn-success'%>
+		</div>
+	</div>
+		
+			<% end %>
+
+</div>
