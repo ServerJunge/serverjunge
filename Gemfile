@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # SimpleForm
 gem 'simple_form'
 
+# BootStrap WYSIWYG
+gem 'bootstrap-wysihtml5-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 

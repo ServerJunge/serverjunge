@@ -1,9 +1,18 @@
 <div class="well">
- 	<legend>Neuer Artikel</legend>
+ 	<legend>Artikel erstellen</legend>
 
 			<%= simple_form_for(@article)  do |f| %>
 			<%= f.input :title, label: 'Titel' %>
-			<%= f.input :text, label: 'Text' %>
+			<%= f.input :text, label: 'Text', input_html: { class: 'wysihtml5', rows: '30' } %>
+
+				<script type="text/javascript">
+  					$(document).ready(function(){
+					$('.wysihtml5').each(function(i, elem) {
+      				$(elem).wysihtml5();
+      					});
+					})
+				</script>
+	
 		
 	<div class="form-group">
       	<div class="col-lg-10 col-lg-offset-2">
