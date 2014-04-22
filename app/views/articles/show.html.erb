@@ -7,3 +7,10 @@
 <p>
 	<%= raw @article.text %>
 </p>
+
+<%= link_to "Zurück", articles_path, class: 'btn btn-default' %>
+
+<% if user_signed_in? %>
+<%= link_to "Löschen", article_path(@article), class: 'btn btn-danger', method: :delete, data: {confirm: "Soll der Artikel wirklich gelöscht werden?"} %>
+<%= link_to "Editieren", edit_article_path(@article), class: 'btn btn-primary' %>
+<% end %>

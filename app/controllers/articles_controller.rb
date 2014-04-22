@@ -19,4 +19,25 @@ class ArticlesController < ApplicationController
   		@articles = Article.all
 	end
 
+	def destroy
+		@article = Article.find(params[:id]).destroy
+
+		flash[:danger] = "Artikel '#{@article.title}' wurde gelöscht!"
+
+		redirect_to :action => 'index'
+	end
+
+	def edit
+		@article = Article.find(params[:id])
+	end
+
+	def update
+		@article = Article.find(params[:id])
+		@article.update(article_params)
+
+		flash[:info] = "Artikel '#{@article.title}' wurde aktualisiert!"
+
+		redirect_to article_path(@article)
+	end
+
 end
