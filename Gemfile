@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# Will Paginate for Sites
+gem 'will_paginate'
+
+# Will Paginate Bootstrapp Add
+gem 'will_paginate-bootstrap'
+
 # Devise
 gem 'devise'
 
