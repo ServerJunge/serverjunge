@@ -41,6 +41,8 @@
     </div><!--END NAVBAR -->
 
     <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
 
       <% flash.each do |key, value| %>
         <div class="<%= flash_class(key) %>">
@@ -50,6 +52,10 @@
       <% end %>
 
     	<%= yield %>
+
+       </div>
+
+      </div>
 
     </div><!-- END CONTAINER -->
 
