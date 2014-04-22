@@ -15,4 +15,8 @@
 
 <% end %>
 
-<%= will_paginate(@articles, renderer: BootstrapPagination::Rails) %>
+<div class="row">
+    <div class="col-md-8 col-md-offset-4">
+		<%= will_paginate(@articles, renderer: BootstrapPagination::Rails) %>
+	</div>
+</div>
