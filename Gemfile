@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Devise
+gem 'devise'
+
 # SimpleForm
 gem 'simple_form'
 
