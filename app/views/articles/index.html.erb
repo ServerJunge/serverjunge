@@ -1,0 +1,11 @@
+<% @articles.each do |article| %>
+<h1>
+  <%= article.title %>
+</h1>
+
+<hr>
+
+<p>
+  <%= raw article.text %>
+</p>
+<% end %>
