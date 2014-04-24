@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# FontAwesome
+gem "font-awesome-rails"
+
 # Will Paginate for Sites
 gem 'will_paginate'
 

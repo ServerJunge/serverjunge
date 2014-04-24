@@ -41,7 +41,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8">
 
       <% flash.each do |key, value| %>
         <div class="<%= flash_class(key) %>">
@@ -52,9 +52,12 @@
 
     	<%= yield %>
 
-       </div>
-
-      </div>
+        </div><!-- END COL 8 -->
+      
+        <div class="col-md-4"><!-- START COL 4 -->
+        </div><!-- END COL 4 -->
+      
+      </div><!-- END ROW -->
 
     </div><!-- END CONTAINER -->
 
