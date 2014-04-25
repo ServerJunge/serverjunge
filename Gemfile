@@ -7,6 +7,7 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 
 # Devise
+gem 'devise-i18n-views'
 gem 'devise'
 
 # SimpleForm
