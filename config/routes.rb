@@ -6,6 +6,7 @@ Serverjunge::Application.routes.draw do
     put 'users' => 'devise/registrations#update', :as => 'user_registration'
   end
   
+ 	get 'tags/:tag', to: 'articles#index', as: :tag
   resources :articles
 
   root 'articles#index'

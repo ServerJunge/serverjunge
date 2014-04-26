@@ -5,7 +5,7 @@
 
 <hr>
 	<h5>
-		<p class="text-muted">Artikel wurde vor <%= time_ago_in_words(article.created_at) %> verfasst | Tags - <%= article.tag_list %>
+		<p class="text-muted">Artikel wurde vor <%= time_ago_in_words(article.created_at) %> verfasst | Tags - <%= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
 		</p>
 	</h5>
 
