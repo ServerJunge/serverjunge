@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Act as Taggable
+gem 'acts-as-taggable-on'
+
 # FontAwesome
 gem "font-awesome-rails"
 
