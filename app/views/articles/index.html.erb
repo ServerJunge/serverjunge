@@ -1,9 +1,12 @@
 <% @articles.each do |article| %>
-<h1>
-	<%= link_to article.title, article_path(article) %>
-</h1>
+<div class="blog-item">
 
-<hr>
+                    <h1><%= link_to article.title, article_path(article) %></h1>
+
+
+
+
+
 	<h5>
 		<p class="text-muted">Artikel wurde vor <%= time_ago_in_words(article.created_at) %> verfasst | Tags - <%= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
 		</p>
@@ -14,10 +17,11 @@
 </p>
 
 <% if user_signed_in? %>
-  <%= link_to 'New article', new_article_path %>
+  <%= link_to 'Artikel lesen', new_article_path, class: 'btn btn-danger' %>
+<% end %>
+</div>
 <% end %>
 
-<% end %>
 
 <div class="row">
     <div class="col-md-8 col-md-offset-4">
