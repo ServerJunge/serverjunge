@@ -27,3 +27,10 @@
  body {
  	padding-top: 60px;
  }
+
+ #footer {
+   bottom: 0;
+   height: 160px;
+   position: relative;
+  width: 100%;
+}
