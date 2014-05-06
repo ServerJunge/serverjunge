@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Static Pages with HighVoltage
+gem 'high_voltage', '~> 2.1.0'
+
 #Act as Taggable
 gem 'acts-as-taggable-on'
 
