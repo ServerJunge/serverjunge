@@ -18,9 +18,9 @@ class ArticlesController < ApplicationController
 
 	def index
 		if params[:tag]
-			@articles = Article.tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 2)
+			@articles = Article.order('created_at DESC').tagged_with(params[:tag]).paginate(:page => params[:page], :per_page => 5)
 		else
-  			@articles = Article.paginate(:page => params[:page], :per_page => 2)
+  			@articles = Article.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
   		end
 	end
 
