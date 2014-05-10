@@ -11,5 +11,4 @@ Serverjunge::Application.routes.draw do
   resources :articles
 
   root 'articles#index'
-   resources :pages
 end
