@@ -30,10 +30,7 @@ GEM
       activerecord (>= 3, < 5)
       activesupport (>= 3, < 5)
     arel (4.0.2)
-    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
-    bootstrap-wysihtml5-rails (0.3.1.23)
-      railties (>= 3.0)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -143,7 +140,6 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
-  bootstrap-wysihtml5-rails
   coffee-rails (~> 4.0.0)
   devise
   devise-i18n-views
