@@ -13,9 +13,6 @@
  *= require font-awesome
  *= require summernote
  */
-html {
-  font-family: 'Raleway', sans-serif;
-}
 
 @font-face {
   font-family: 'Glyphicons Halflings';
